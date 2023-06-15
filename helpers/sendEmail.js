@@ -9,7 +9,7 @@ sgMail.setApiKey(SENDGRID_REST_API_KEY);
 async function sendEmail(data) {
   const email = {
     ...data,
-    from: 'akwebua.study@gmail.com',
+    from: 'mycloud@meta.ua',
   };
   await sgMail.send(email);
   return true; // Якщо все добре. А якщо ні - ф-я викидає помилку, з якою далі розбираємось
